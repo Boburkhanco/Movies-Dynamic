@@ -1,8 +1,8 @@
-body{
+.darkModeOn{
     background-color: black;
     color: white;
+    transition: .5s;
 }
-
 .box{
     padding: 10px;
     background-color: red;
@@ -14,12 +14,15 @@ body{
 }
 .list{
     list-style-type: none;
-    border: 1px solid black;
+    border: 2px solid ;
     border-radius: 3px;
     width: 47%;
     padding-bottom: 15px;
     margin: 0 auto;
     margin-bottom: 20px;
+}
+.listBorderColorWhite{
+    border-color: white;
 }
 .list__name{
     padding: 10px;
@@ -144,6 +147,37 @@ body{
     transition: .4s;
 
 }
+
+
+#darkMode{
+    width: 80px;
+    height: 40px;
+    border: 2px solid rgb(0, 174, 255);
+    border-radius: 50px;
+    position: absolute;
+    right: 60px;
+    cursor: pointer;
+}
+#togglerDarkmode{
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid red;
+    display: block;
+    background-color: rgb(5, 255, 222);
+    transition: .5s;
+}
+#togglerDarkmode:hover{
+    border-color: rgb(255, 0, 212);
+    background-color: rgb(40, 176, 255);
+    cursor: pointer;
+    transition: .5s;
+}
+.justOn{
+    transform: translate(38px);
+    transition: .5s;
+}
+
 @media only screen and (max-width: 500px) {
     .list{
         width: 100%;

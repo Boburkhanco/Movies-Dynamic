@@ -7,6 +7,11 @@ let categories = [
   "Sport",
   "Romance",
   "Sci-Fi",
+  "Crime",
+  "Drama",
+  "Thriller",
+  "Action",
+  "Horror",
 ];
 var movies = [
     {

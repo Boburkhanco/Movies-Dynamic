@@ -1,7 +1,6 @@
 let storage = window.localStorage
 let bookmarkedMovies = JSON.parse(storage.getItem('bookmarked')) ?? []
 
-
 const movieRender = (moviesAll) => {
   first.innerHTML = ''
 
@@ -164,4 +163,11 @@ bookmarkList.addEventListener('click', e => {
 
 exitBtn.addEventListener('click', e => {
   alertBar.remove()
+})
+
+darkMode.addEventListener('click', e => {
+  let listItem = document.getElementsByClassName('list')
+  fullBody.classList.toggle('darkModeOn')
+  togglerDarkmode.classList.toggle('justOn')
+  listItem.classList.toggle('listBorderColorWhite')
 })
