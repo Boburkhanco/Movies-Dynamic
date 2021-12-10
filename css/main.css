@@ -1,0 +1,161 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.box{
+    padding: 10px;
+    background-color: red;
+    border: 1px solid orangered;
+}
+#first{
+    display: flex;
+    flex-wrap: wrap;
+}
+.list{
+    list-style-type: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 47%;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.list__name{
+    padding: 10px;
+    padding-bottom: 0;
+    font-weight: 600;
+    font-size: 25px;
+}
+.list__year{
+    padding: 10px;
+    padding-bottom: 0;
+    display: block;
+    font-weight: 500;
+    font-size: 19px;
+    display: flex;
+}
+.list__year::before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-image: url("./../images/calendar2-fill.svg");
+    background-repeat:no-repeat;
+    background-size: 20px;
+    display: block;
+    background-position: center;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+.list__rating{
+    font-size: 23px;
+    display: block;
+    padding: 10px;
+    display: flex;
+}
+.list__rating::before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-image: url("./../images/star-fill.svg");
+    background-repeat:no-repeat;
+    background-size: 20px;
+    display: block;
+    background-position: center;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+.list__item{
+    width: 50%;
+}
+.list__img{
+    width: 100%;
+}
+.bookmarked{
+    list-style-type: none;
+    padding: 0;
+}
+.btn-primary{
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: #fff;
+    color: blue;
+    margin-left: 30px;
+    width: 25%;
+    font-size: 12px;
+    transition: .4s;
+}
+.btn-trailer-link{
+    text-decoration: none;
+    color: blue;
+}
+.btn-trailer-link:hover{
+    color: white
+}
+.btn-info{
+    border: 2px solid rgb(0, 183, 255);
+    border-radius: 5px;
+    background-color: #fff;
+    color: rgb(0, 183, 255);
+    margin-left: 10px;
+    width: 25%;
+    font-size: 12px;
+    transition: .4s;
+}
+.btn-success{
+    border: 2px solid rgb(3, 219, 21);
+    border-radius: 5px;
+    background-color: #fff;
+    color: rgb(3, 219, 21);
+    margin-left: 10px;
+    width: 25%;
+    font-size: 12px;
+    transition: .4s;
+}
+.btn-warning{
+    width: 100%;
+    background-color: rgb(32, 129, 255);
+    border: 1px solid rgb(32, 129, 255);
+}
+.form-select{
+    width: 100%;
+}
+.pagination{
+    margin: 0 auto;
+}
+#exitBtn{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 0;
+    background-image: url("./../images/times.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    transition: .4s;
+}
+#exitBtn:hover{
+    background-color: #c3c3c3;
+    border-radius: 5px;
+    transition: .4s;
+
+}
+@media only screen and (max-width: 500px) {
+    .list{
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+    .list__name{
+        font-size: 17px;
+    }
+    .btn-primary, .btn-info, .btn-success{
+        font-size: 13px;
+    }
+}
